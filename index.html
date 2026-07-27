@@ -462,45 +462,84 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="w-full bg-[#03060a] text-slate-300 py-16 border-t-2 border-slate-900">
-    <div class="w-full max-w-[1720px] mx-auto px-6 sm:px-12 lg:px-16 grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
-      
-      <!-- Informações Corporativas -->
-      <div class="space-y-4">
-        <div class="flex items-center justify-center md:justify-start gap-4">
-          <div class="w-12 h-12 overflow-hidden rounded-xl flex items-center justify-center bg-black border-2 border-slate-800">
-            <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" class="w-full h-full object-cover scale-110" />
-          </div>
-          <span class="font-black text-2xl tracking-tight text-white uppercase">Fluxus <span class="text-indigo-400">RH</span></span>
+<!-- FOOTER OFICIAL FLUXUS RH -->
+<footer class="w-full bg-[#03060a] text-slate-300 py-16 border-t-2 border-slate-900">
+  <div class="w-full max-w-[1720px] mx-auto px-6 sm:px-12 lg:px-16 grid md:grid-cols-3 gap-12 items-start text-left">
+    
+    <!-- COLUNA 1: LOGO + DESCRIÇÃO DA SOLUÇÃO -->
+    <div class="space-y-6">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 overflow-hidden rounded-xl flex items-center justify-center bg-black border-2 border-slate-800 shrink-0">
+          <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" class="w-full h-full object-cover scale-110" />
         </div>
-        <p class="text-sm text-slate-400 max-w-sm">
-          Aceleração, triagem automatizada de pessoas e onboarding inteligente para empresas enxutas.
-        </p>
+        <span class="font-black text-2xl tracking-tight text-white uppercase">
+          FLUXUS <strong class="text-indigo-400 font-black">RH</strong>
+        </span>
       </div>
-
-      <!-- Contato Direto -->
-      <div class="space-y-4 flex flex-col items-center md:items-start text-sm font-bold uppercase tracking-wider">
-        <span class="text-indigo-400 mb-1 text-xs">Canais de Atendimento</span>
-        <a href="https://wa.me/5512982827603" target="_blank" rel="noopener" class="hover:text-white transition text-base">📞 WhatsApp: +55 (12) 98282-7603</a>
-        <a href="mailto:sm.fabio.roberticosta@gmail.com" class="hover:text-white transition text-base">✉️ E-mail: sm.fabio.roberticosta@gmail.com</a>
-      </div>
-
-      <!-- Liderança e Assinatura -->
-      <div class="space-y-2 flex flex-col items-center md:items-end md:text-right">
-        <span class="text-xs text-slate-400 font-bold uppercase tracking-widest">Liderança Técnica</span>
-        <h4 class="font-bold text-white text-lg">Fabio Roberti Costa</h4>
-        <p class="text-indigo-400 font-black text-xs uppercase tracking-wider">Chief Technology Officer (CTO)</p>
-        <p class="text-slate-400 text-xs uppercase font-bold tracking-tight">Agile Solutions Architect & Scrum Master</p>
-      </div>
-
+      <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+        Aceleração, triagem automatizada de pessoas e onboarding inteligente para empresas enxutas.
+      </p>
     </div>
 
-    <!-- Linha de Direitos Autorais -->
-    <div class="w-full text-center text-xs font-bold text-slate-500 mt-12 pt-8 border-t border-slate-900">
-      <p>&copy; 2026 Fluxus RH. Todos os direitos reservados. Uma divisão de soluções ágeis da Fluxus Agile.</p>
+    <!-- COLUNA 2: CANAIS DE ATENDIMENTO OFICIAL -->
+    <div class="space-y-4">
+      <h3 class="text-indigo-400 font-black text-xs uppercase tracking-widest">
+        CANAIS DE ATENDIMENTO
+      </h3>
+      <div class="space-y-3 text-sm">
+        <div class="flex items-center gap-3">
+          <span class="text-indigo-400 text-lg">📞</span>
+          <div>
+            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">TELEFONE:</span>
+            <a href="tel:+551236006887" class="hover:text-white transition font-bold text-slate-200">+55 (12) 3600-6887</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-indigo-400 text-lg">💬</span>
+          <div>
+            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">WHATSAPP:</span>
+            <a href="https://wa.me/5512982827603" target="_blank" rel="noopener" class="hover:text-white transition font-bold text-slate-200">+55 (12) 98282-7603</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-indigo-400 text-lg">✉️</span>
+          <div>
+            <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">E-MAIL:</span>
+            <a href="mailto:sm.fabio.roberticosta@gmail.com" class="hover:text-white transition font-bold text-slate-200 lowercase">sm.fabio.roberticosta@gmail.com</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+
+    <!-- COLUNA 3: LIDERANÇA TÉCNICA (CARD DESTACADO) -->
+    <div class="space-y-3">
+      <h3 class="text-indigo-400 font-black text-xs uppercase tracking-widest">
+        LIDERANÇA TÉCNICA
+      </h3>
+      <!-- CARD INTERNO -->
+      <div class="bg-[#0b1322] border border-slate-800/80 rounded-2xl p-6 space-y-3 shadow-lg">
+        <div>
+          <h4 class="font-bold text-white text-lg leading-snug">Fabio Roberti Costa</h4>
+          <p class="text-indigo-400 font-black text-xs uppercase tracking-wider mt-1">
+            CHIEF TECHNOLOGY OFFICER (CTO)
+          </p>
+        </div>
+        <div class="pt-3 border-t border-slate-800/80">
+          <p class="text-slate-400 text-[11px] uppercase font-bold tracking-wider leading-relaxed">
+            AGILE SOLUTIONS ARCHITECT & SCRUM MASTER
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RODAPÉ INFERIOR: COPYRIGHT -->
+  <div class="w-full max-w-[1720px] mx-auto px-6 sm:px-12 lg:px-16 mt-12 pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-bold text-slate-500">
+    <p>&copy; 2026 Fluxus RH. Todos os direitos reservados.</p>
+    <p class="text-slate-400">Uma divisão de soluções ágeis da Fluxus Agile.</p>
+  </div>
+</footer>
 
   <script>
     // Gerenciador do Menu Mobile
