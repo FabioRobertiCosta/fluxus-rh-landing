@@ -77,17 +77,17 @@
       <!-- LOGO OFICIAL FLUXUS RH -->
       <a href="#hero" class="flex items-center gap-4 shrink-0" aria-label="Fluxus RH - Início">
         <div class="w-12 h-12 overflow-hidden rounded-xl flex items-center justify-center bg-black border-2 border-rhIndigo shadow-md">
-          <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" class="w-full h-full object-cover scale-110" />
+          <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" class="w-full h-full object-cover scale-110" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=85x85&data=https://wa.me/551236006887';" />
         </div>
         <span class="font-black text-2xl tracking-tight text-fluxusNavy dark:text-white uppercase">Fluxus <span class="text-rhIndigo">RH</span></span>
       </a>
 
-      <!-- NAVEGAÇÃO DESKTOP LIMPA -->
+      <!-- NAVEGAÇÃO DESKTOP -->
       <nav class="hidden lg:flex items-center gap-8" id="nav-menu" aria-label="Menu principal">
         <a href="#proposta" class="font-black text-sm uppercase tracking-wider text-slate-700 dark:text-slate-200 hover:text-rhIndigo transition">O Problema</a>
         <a href="#pilares" class="font-black text-sm uppercase tracking-wider text-slate-700 dark:text-slate-200 hover:text-rhIndigo transition">Soluções</a>
         <a href="#precos" class="font-black text-sm uppercase tracking-wider text-rhIndigo hover:underline transition">Planos & Preços</a>
-        <a href="#faq" class="font-black text-sm uppercase tracking-wider text-slate-700 dark:text-slate-200 hover:text-rhIndigo transition">Perguntas Frequentes</a>
+        <a href="#faq" class="font-black text-sm uppercase tracking-wider text-slate-700 dark:text-slate-200 hover:text-rhIndigo transition">Dúvidas Comuns</a>
       </nav>
 
       <!-- CONTROLES -->
@@ -108,7 +108,7 @@
       <a href="#proposta" class="block font-black text-xl uppercase tracking-wide py-3 border-b border-slate-100 dark:border-slate-800 text-white">O Problema</a>
       <a href="#pilares" class="block font-black text-xl uppercase tracking-wide py-3 border-b border-slate-100 dark:border-slate-800 text-white">Soluções</a>
       <a href="#precos" class="block font-black text-xl uppercase tracking-wide py-3 text-rhIndigo">Planos & Preços</a>
-      <a href="#faq" class="block font-black text-xl uppercase tracking-wide py-3 border-b border-slate-100 dark:border-slate-800 text-white">Perguntas Frequentes</a>
+      <a href="#faq" class="block font-black text-xl uppercase tracking-wide py-3 border-b border-slate-100 dark:border-slate-800 text-white">Dúvidas Comuns</a>
       <a href="https://wa.me/551236006887?text=Olá!%20Vim%20pelo%20site%20do%20Fluxus%20RH%20e%20quero%20agendar%20uma%20demonstração." target="_blank" rel="noopener" class="block font-black text-xl uppercase tracking-wide py-3 text-rhIndigo">Falar no WhatsApp</a>
     </div>
   </header>
@@ -153,22 +153,45 @@
           </div>
         </div>
 
-        <aside class="w-full bg-white dark:bg-slate-900 rounded-[36px] shadow-2xl overflow-hidden fade-in-up visible flex flex-col justify-between border-2 border-rhIndigo/40">
-          <div class="w-full relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
-            <img src="src/images/rh-hero.jpg" alt="Interface do Fluxus RH no WhatsApp simulando triagem de candidatos" class="absolute inset-0 w-full h-full object-cover object-center" onerror="this.src='src/images/favicon-fluxus.jpg'; this.className='w-40 h-40 object-contain opacity-50';" />
+        <!-- MOCKUP VETORIAL FLUXUS RH (SEM DEPENDER DE IMAGENS EXTERNAS) -->
+        <aside class="w-full bg-slate-900 rounded-[36px] shadow-2xl overflow-hidden fade-in-up visible flex flex-col justify-between border-2 border-rhIndigo/40 p-6 sm:p-8 space-y-6">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-rhIndigo flex items-center justify-center font-black text-white text-sm">RH</div>
+              <div>
+                <h4 class="font-black text-white text-base">Assistente Fluxus RH</h4>
+                <p class="text-xs text-emerald-400 font-bold">● Online 24h</p>
+              </div>
+            </div>
+            <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-mono">WhatsApp Auto</span>
           </div>
-          <div class="grid grid-cols-3 text-center border-t-2 border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
-            <div class="p-6 border-r-2 border-slate-200 dark:border-slate-800">
-              <strong class="block text-2xl lg:text-3xl font-black text-rhIndigo">Triagem</strong>
-              <span class="text-xs font-black text-slate-500 uppercase tracking-wider">Automática</span>
+
+          <div class="space-y-4 font-sans text-sm">
+            <div class="bg-slate-800/90 text-slate-200 p-4 rounded-2xl rounded-tl-none max-w-[85%] border border-slate-700">
+              <p class="font-bold text-rhIndigo mb-1">🤖 Robô de Triagem:</p>
+              <p>Olá! Seja bem-vindo à seleção. Qual a sua disponibilidade de horário para início imediato?</p>
             </div>
-            <div class="p-6 border-r-2 border-slate-200 dark:border-slate-800">
-              <strong class="block text-2xl lg:text-3xl font-black text-rhIndigo">24/7</strong>
-              <span class="text-xs font-black text-slate-500 uppercase tracking-wider">SAC Colaborador</span>
+            <div class="bg-rhIndigo/20 text-white p-4 rounded-2xl rounded-tr-none max-w-[80%] ml-auto border border-rhIndigo/40">
+              <p>Tenho disponibilidade total para o turno da manhã ou noite.</p>
             </div>
-            <div class="p-6">
-              <strong class="block text-2xl lg:text-3xl font-black text-rhIndigo">-80%</strong>
-              <span class="text-xs font-black text-slate-500 uppercase tracking-wider">Turnover</span>
+            <div class="bg-slate-800/90 text-slate-200 p-4 rounded-2xl rounded-tl-none max-w-[85%] border border-slate-700">
+              <p class="font-bold text-emerald-400 mb-1">✓ Pré-qualificado:</p>
+              <p>Excelente! Seu perfil atende ao requisito. Agendamos sua entrevista inicial para amanhã às 10h.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 text-center border-t border-slate-800 pt-4">
+            <div>
+              <strong class="block text-2xl font-black text-rhIndigo">Triagem</strong>
+              <span class="text-[10px] font-black text-slate-400 uppercase">Automática</span>
+            </div>
+            <div>
+              <strong class="block text-2xl font-black text-rhIndigo">24/7</strong>
+              <span class="text-[10px] font-black text-slate-400 uppercase">SAC RH</span>
+            </div>
+            <div>
+              <strong class="block text-2xl font-black text-rhIndigo">-80%</strong>
+              <span class="text-[10px] font-black text-slate-400 uppercase">Turnover</span>
             </div>
           </div>
         </aside>
@@ -195,8 +218,15 @@
           </p>
         </div>
         
-        <div class="rounded-[36px] overflow-hidden shadow-2xl border-2 border-rhIndigo/40 aspect-[4/3] w-full relative fade-in-up">
-          <img src="src/images/rh-problema.jpg" alt="Gestão de currículos e gargalo de treinamento" class="absolute inset-0 w-full h-full object-cover object-center" onerror="this.src='src/images/favicon-fluxus.jpg'; this.className='w-40 h-40 object-contain opacity-50';" />
+        <!-- CARD VISUAL INTEGRADO EM CÓDIGO (SEM IMAGEM QUEBRADA) -->
+        <div class="rounded-[36px] bg-slate-900/90 border-2 border-rhIndigo/40 p-8 shadow-2xl flex flex-col justify-center space-y-6 fade-in-up">
+          <h3 class="text-rhIndigo font-black text-xl uppercase tracking-wider">Desafios Comuns que Eliminamos:</h3>
+          <ul class="space-y-4 text-slate-200 font-medium">
+            <li class="flex items-center gap-3"><span class="text-red-400 font-bold">✕</span> Horas perdidas baixando PDFs e organizando planilhas.</li>
+            <li class="flex items-center gap-3"><span class="text-red-400 font-bold">✕</span> Candidatos sem perfil básico comparecendo a entrevistas.</li>
+            <li class="flex items-center gap-3"><span class="text-red-400 font-bold">✕</span> Novos colaboradores perdidos por falta de treinamento no D1.</li>
+            <li class="flex items-center gap-3"><span class="text-emerald-400 font-bold">✓</span> <strong>Solução:</strong> Robô de triagem e envio de manual de integração automatizado 24h/dia.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -210,7 +240,6 @@
         </div>
 
         <div class="grid sm:grid-cols-3 gap-8">
-          <!-- Pilar 01 -->
           <div class="p-10 bg-white dark:bg-slate-900 border-2 border-rhIndigo rounded-[36px] shadow-2xl flex flex-col justify-between group">
             <div>
               <span class="font-black text-rhIndigo tracking-widest text-4xl block mb-6">01</span>
@@ -224,7 +253,6 @@
             </div>
           </div>
 
-          <!-- Pilar 02 -->
           <div class="p-10 bg-white dark:bg-slate-900 border-2 border-rhIndigo rounded-[36px] shadow-2xl flex flex-col justify-between group">
             <div>
               <span class="font-black text-rhIndigo tracking-widest text-4xl block mb-6">02</span>
@@ -238,7 +266,6 @@
             </div>
           </div>
 
-          <!-- Pilar 03 -->
           <div class="p-10 bg-white dark:bg-slate-900 border-2 border-rhIndigo rounded-[36px] shadow-2xl flex flex-col justify-between group">
             <div>
               <span class="font-black text-rhIndigo tracking-widest text-4xl block mb-6">03</span>
@@ -301,7 +328,7 @@
             </a>
           </div>
 
-          <!-- PLANO PRO (DESTAQUE) -->
+          <!-- PLANO PRO -->
           <div class="bg-[#0b1322] border-4 border-rhIndigo rounded-[36px] p-8 md:p-10 shadow-2xl flex flex-col justify-between relative group transform lg:-translate-y-4">
             <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-rhIndigo text-white font-black text-xs uppercase px-6 py-2 rounded-full tracking-widest shadow-xl">
               Mais Procurado
@@ -414,17 +441,15 @@
 
   </main>
 
-  <!-- FOOTER OFICIAL FLUXUS RH (100% ALINHADO EM TELAS ULTRA-WIDE E MOBILE) -->
+  <!-- FOOTER OFICIAL FLUXUS RH (100% ALINHADO E CENTRALIZADO) -->
   <footer style="background-color: #03060a; color: #cbd5e1; border-top: 2px solid #0f172a; padding: 48px 24px 24px 24px; font-family: Arial, Helvetica, sans-serif; width: 100%;">
-    
-    <!-- CONTÊINER PRINCIPAL LIMITADO A 1200PX DE LARGURA MAXIMA -->
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 32px;">
       
-      <!-- COLUNA 1: LOGO + DESCRIÇÃO DA SOLUÇÃO -->
+      <!-- COLUNA 1 -->
       <div style="flex: 1; min-width: 260px; display: flex; flex-direction: column; gap: 12px; text-align: left;">
         <div style="display: flex; align-items: center; gap: 12px;">
           <div style="width: 42px; height: 42px; border-radius: 10px; overflow: hidden; background: #000000; border: 2px solid #1e293b; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.1);" />
+            <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.1);" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=85x85&data=https://wa.me/551236006887';" />
           </div>
           <span style="font-size: 1.35rem; font-weight: 900; letter-spacing: -0.5px; color: #ffffff; text-transform: uppercase;">
             FLUXUS <strong style="color: #6366f1; font-weight: 900;">RH</strong>
@@ -435,7 +460,7 @@
         </p>
       </div>
 
-      <!-- COLUNA 2: CANAIS DE ATENDIMENTO E QR CODE CENTRALIZADOS -->
+      <!-- COLUNA 2 -->
       <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px;">
         <div style="display: flex; flex-direction: column; gap: 6px; align-items: center;">
           <h4 style="font-size: 0.85rem; font-weight: 900; color: #ff9100; text-transform: uppercase; letter-spacing: 1px; margin: 0; height: 24px; display: flex; align-items: center;">
@@ -447,7 +472,6 @@
           </div>
         </div>
 
-        <!-- CARD QR CODE -->
         <div style="display: flex; align-items: center; gap: 14px; background: #0f172a; padding: 12px 16px; border-radius: 10px; border: 1px solid #334155; width: fit-content;">
           <img src="https://api.qrserver.com/v1/create-qr-code/?size=85x85&data=https://wa.me/551236006887" alt="QR Code WhatsApp" style="width: 75px; height: 75px; border-radius: 6px; background: #ffffff; padding: 3px;">
           <div style="display: flex; flex-direction: column; gap: 3px; text-align: left;">
@@ -457,7 +481,7 @@
         </div>
       </div>
 
-      <!-- COLUNA 3: LIDERANÇA TÉCNICA -->
+      <!-- COLUNA 3 -->
       <div style="flex: 1; min-width: 260px; display: flex; flex-direction: column; gap: 6px; text-align: right; align-items: flex-end;">
         <h4 style="font-size: 0.85rem; font-weight: 900; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin: 0; height: 24px; display: flex; align-items: center; justify-content: flex-end;">
           Liderança Técnica
@@ -478,7 +502,6 @@
 
     </div>
 
-    <!-- LINHA DE COPYRIGHT CENTRALIZADA EM QUALQUER MONITOR -->
     <div style="max-width: 1200px; margin: 32px auto 0 auto; padding-top: 20px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.82rem; font-weight: 600; color: #64748b; width: 100%;">
       © 2026 Fluxus RH. Todos os direitos reservados. Uma divisão de soluções ágeis da Fluxus Agile.
     </div>
